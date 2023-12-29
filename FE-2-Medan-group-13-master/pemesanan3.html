@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /> -->
+    <link rel="stylesheet" href="./style/pemesanan.css">
+    <title>N O M A D</title>
+    <link rel="icon" href="./assets/titles.png" type="image/x-icon">
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--.................. nav bar start ....................-->
+    <div class="navbar">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img class="picturel" src="./assets/logo.png">
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link">Home</a></li>
+                    <li><a href="destinasi.html" class="link active">Destination</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a class="profile" href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+            </div>
+        </nav>
+    </div>
+    <!--.................. nav bar end ....................-->
+    <!-- Hotel Information -->
+    <div class="hotel-name-container">
+        <div class="hotel-name">
+            <h2>Seaesta Komodo Hostel & Hotel</h2>
+        </div>
+        <div class="hotel-address">
+            <p>Jalan Soekarno Hatta, Labuan Bajo, Labuan Bajo, Indonesia, 86554</p>
+        </div>
+    </div>
+    <div class="hotel-info-container">
+        <h2>1. Deluxe Triple</h2>
+        <div class="column" id="column1">
+            <img src="./assets/seaesta7.webp" alt="Image 1">
+        </div>
+        <div class="column" id="column2">
+            <img src="./assets/ps1.webp" alt="Image 2">
+            <img src="./assets/ps2.webp" alt="Image 3">
+            <img src="./assets/ps3.webp" alt="Image 4">
+            <img src="./assets/ps4.webp" alt="Image 5">
+        </div>
+        <div class="column" id="column3">
+            <div class="row">
+                <div class="textColumn">
+                    <p>Tamu Perkamar</p>
+                    <p>Tipe tempat tidur</p>
+                    <p>Check-In</p>
+                    <p>Check-Out</p>
+                </div>
+                <div class="textColumn">
+                    <p>: 2 Tamu</p>
+                    <p>: 1 Queen Bed</p>
+                    <p>: 13.00 PM</p>
+                    <p>: 12.00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking form -->
+    <div class="bookingContainer">
+        <form action="#" method="post">
+            <h2>Data Pemesanan</h2>
+            <label for="name">Nama lengkap</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Nomor Handphone</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="email">Durasi Penginapan</label>
+            <input type="text" id="durasiPenginapan" name="durasiPenginapan" required>
+        </form>
+    </div>
+    <!-- Additional Information -->
+    <div class="aditionalInformation">
+        <form action="#" method="post">
+            <h2>Permintaan Khusus*</h2>
+            <textarea id="Permintaan" name="Permintaan" rows="4" cols="50"></textarea>
+        </form>
+    </div>
+    <!-- Price Detail -->
+    <div class="priceDetail">
+        <div class="row">
+            <h2>Detail Harga</h2>
+            <div class="column2">
+                <p>Harga Kamar</p>
+                <p>Taxes & Service</p>
+                <b>
+                    <p>Total Bayar</p>
+                </b>
+            </div>
+            <div class="column2">
+                <p>: IDR 1.845.480</p>
+                <p>: IDR 100.000</p>
+                <b>
+                    <p>: IDR 1.945.480</p>
+                </b>
+            </div>
+            <div class="column3">
+                <select>
+                    <option value="" disabled selected>Metode Pembayaran</option>
+                    <option value="option1">BCA</option>
+                    <option value="option2">BRI</option>
+                    <option value="option3">BNI</option>
+                    <option value="option1">MANDIRI</option>
+                    <option value="option2">DANA</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- warning text and button -->
+    <div class="footerText">
+        <p>Dengan mengeklik tombol di bawah, Anda menyetujui <u>Syarat(Ketentuan)</u> serta dari Nomad.</p>
+        <p>*Untuk penambahan kebutuhan selama penginapan akan dibayar langsung di tempat</p>
+    </div>
+    <div class="bottom-pay-button">
+        <a href="pesananSaya3.html"><button id="pay-button">Bayar</button></a>
+    </div>
+</body>
+
+</html>
